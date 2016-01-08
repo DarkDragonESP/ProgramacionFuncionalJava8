@@ -5,7 +5,8 @@
  * Necesitamos importar el paquete java.util.function
  */
 package ej3;
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.function.*;
 
@@ -15,7 +16,7 @@ public class FuncionesBasicas {
 		BinaryOperator<Double> suma = (x, y) -> x + y ;
 		System.out.println("La suma es: " + suma.apply(7.7, 7.3));
 
-		Consumer<String> imprimir = (cadena) -> System.out.println(cadena);
+		Consumer<String> imprimir = cadena -> System.out.println(cadena);
 		imprimir.accept("Esto es un String.");
 
 		Function<String,Integer> hashCodeL = (contraseña)-> contraseña.hashCode();
@@ -24,10 +25,12 @@ public class FuncionesBasicas {
 		Predicate<Integer> verificar = (edad) -> edad >= 18;
 		System.out.println("La edad es mayor a 18: " + verificar.test(20));
 		
-		UnaryOperator<List<String>> inicializar = ArrayList::new ;
 		
-		Function<Double,String> inicializar2 = String::valueOf ;
-		System.out.println(inicializar2.apply(123.4));
+		Supplier<List<String>> inicializar = LinkedList::new ;
+		List<String> lista = inicializar.get();
+		
+		lista = Arrays.asList("Ejemplo 1","Ejemplo 2","Ejemplo 3");
+		lista.forEach(imprimir);
 	}
 
 }

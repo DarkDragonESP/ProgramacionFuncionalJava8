@@ -22,8 +22,8 @@ public class FuncionesBasicas {
 		Function<String,Integer> hashCodeL = (contraseña)-> contraseña.hashCode();
 		System.out.println("El hashcode es: "+ hashCodeL.apply("contraseña"));
 
-		Predicate<Integer> verificar = (nota) -> nota >= 5;
-		System.out.println("¿Aprobado?: " + verificar.test(20));
+		Predicate<Double> verificar = (nota) -> nota >= 5;
+		System.out.println("¿Aprobado?: " + verificar.test(7.0));
 		
 		
 		Supplier<List<String>> inicializar = LinkedList::new ;

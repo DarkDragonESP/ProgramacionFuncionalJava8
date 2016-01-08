@@ -14,11 +14,8 @@ public class Excepciones {
 			}
 		};
 		
-		try{
 		System.out.println(operar.division(11,0));
-		}catch (Exception e) {
-            e.printStackTrace();
-        }
+
 	}
 
 }

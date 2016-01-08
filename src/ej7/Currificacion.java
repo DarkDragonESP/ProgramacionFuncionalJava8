@@ -1,5 +1,6 @@
 package ej7;
 
+import java.util.*;
 import java.util.function.*;
 public class Currificacion {
 
@@ -16,7 +17,11 @@ public class Currificacion {
 		System.out.println(funcIntermedia.apply(3));
 	
 		System.out.println("\nOtra forma: "+mayorQueC.apply(2).apply(3));
-				
+			
+		
+		List<Integer> lista = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+		System.out.println("\n¿Es mayor que 4?");
+		lista.forEach(x-> System.out.println(x+" "+mayorQueC.apply(x).apply(4)));
 	}
 
 }

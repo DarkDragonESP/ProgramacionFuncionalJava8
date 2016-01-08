@@ -1,6 +1,7 @@
 package ej8;
 //nos ahorramso 3 interfaces
 public class InferenciaDeTipos {
+	@FunctionalInterface
 	public interface Concatenacion<T> {
 		public String concatenar(T x, T y, T z);    
 	}

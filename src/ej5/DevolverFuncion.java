@@ -1,25 +1,25 @@
 package ej5;
 
-public class DevolverFuncion {
-	enum EmployeeType {Hourly, Salary, Sales};
+import java.util.function.BiFunction;
 
-	public float calculatePay(int hourssWorked, 
-			float payRate, EmployeeType type) {
-		switch (type) {
-		case Hourly:
-			return hourssWorked * payRate;
-		case Salary:
-			return 40 * payRate;
-		case Sales:
-			return 500.0f + 0.15f * payRate;
+public class DevolverFuncion {
+	enum TipoEvaluacion {Continua, ExamenFinal};
+
+	public static BiFunction<Double, Double, Double> calcularNotaFinal(TipoEvaluacion tipo) {
+		switch (tipo) {
+		case Continua:
+			return (parcial, exFinal) -> parcial*0.2 + exFinal*0.8;
+		case ExamenFinal:
+			return (parcial,exFinal) -> exFinal;
 		default:
-			return 0.0f;
+			return null;
 		}
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		System.out.println("Nota final: "+ String.format("%.2f", 
+					calcularNotaFinal(TipoEvaluacion.Continua).apply(4.5,7.0)));
 
 	}
-
 }

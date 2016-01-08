@@ -13,7 +13,12 @@ public class Excepciones {
 				return x/y;
 			}
 		};
+		
+		try{
 		System.out.println(operar.division(11,0));
+		}catch (Exception e) {
+            e.printStackTrace();
+        }
 	}
 
 }

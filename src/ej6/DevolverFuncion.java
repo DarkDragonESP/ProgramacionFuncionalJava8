@@ -22,10 +22,12 @@ public class DevolverFuncion {
 	}
 
 	public static void main(String[] args) {
-		
-		BiFunction<Double, Double, Double> variable = calcularNotaFinal(TipoEvaluacion.ExamenFinal);
-		
-		System.out.println("Nota final: "+String.format("%.2f",  variable.apply(4.5,7.0)));
+
+		BiFunction<Double, Double, Double> variable = 
+				calcularNotaFinal(TipoEvaluacion.ExamenFinal);
+
+		System.out.println("Nota final: "+String.format("%.2f",  
+				variable.apply(4.5,7.0)));
 
 	}
 }

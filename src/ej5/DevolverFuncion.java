@@ -1,6 +1,10 @@
 /*Autor: Francisco Molina Sánchez
- *Ejemplo 1: Interfaz Funcional y Expresiones Lambda
- *Descripción:
+ *Ejemplo 5: Devolviendo una función
+ *Descripción: en este ejemplo mostramos como devolver 
+ *una expresión lambda.
+ *Podemos calcular la nota final de dos tipos de alumno, segun 
+ *la evaluacion continua o solo con examen final.
+ *Ventaja: podemos usar la expresión lambda en diversos contextos
  */
 package ej5;
 
@@ -23,7 +27,7 @@ public class DevolverFuncion {
 	public static void main(String[] args) {
 		
 		System.out.println("Nota final: "+ String.format("%.2f", 
-					calcularNotaFinal(TipoEvaluacion.Continua).apply(4.5,7.0)));
+					calcularNotaFinal(TipoEvaluacion.Continua).apply(4.5,8.0)));
 
 	}
 }

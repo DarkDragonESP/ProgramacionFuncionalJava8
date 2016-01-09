@@ -1,6 +1,8 @@
 /*Autor: Francisco Molina Sánchez
- *Ejemplo 1: Interfaz Funcional y Expresiones Lambda
- *Descripción:
+ *Ejemplo 7: Currificación
+ *Descripción: mostramos como aplicar currificacion con
+ *expresiones lambda. En este caso, usamos la BiFunction mayorQue
+ *imprimiendo una funcion parcual.Y la aplicamos sobre una lista.
  */
 package ej7;
 

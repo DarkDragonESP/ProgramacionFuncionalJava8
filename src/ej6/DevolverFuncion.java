@@ -1,6 +1,7 @@
 /*Autor: Francisco Molina Sánchez
- *Ejemplo 1: Interfaz Funcional y Expresiones Lambda
- *Descripción:
+ *Ejemplo 6: Asignando una expresión lambda o función
+ *Descripción: usamos el ejemplo anterior para mostrar como
+ *se puede asignar una funcion a una variable y su uso. 
  */
 package ej6;
 
@@ -23,6 +24,7 @@ public class DevolverFuncion {
 	public static void main(String[] args) {
 		
 		BiFunction<Double, Double, Double> variable = calcularNotaFinal(TipoEvaluacion.ExamenFinal);
+		
 		System.out.println("Nota final: "+String.format("%.2f",  variable.apply(4.5,7.0)));
 
 	}

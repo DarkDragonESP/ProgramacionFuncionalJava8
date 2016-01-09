@@ -1,6 +1,9 @@
 /*Autor: Francisco Molina Sánchez
- *Ejemplo 1: Interfaz Funcional y Expresiones Lambda
- *Descripción:
+ *Ejemplo 10: Composición
+ *Descripción: mostramos como usar composicion de funciones
+ *con expresiones lambda.Podemos usar los métodos "compose" (despues de)
+ *y "andThen" (antes de) para aplicarlo según el orden que deseamos en el que
+ *se ejecutan las funciones
  */
 package ej10;
 import java.util.function.*;

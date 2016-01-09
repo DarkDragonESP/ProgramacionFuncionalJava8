@@ -1,6 +1,8 @@
 /*Autor: Francisco Molina Sánchez
- *Ejemplo 1: Interfaz Funcional y Expresiones Lambda
- *Descripción:
+ *Ejemplo 9: Manejo De Excepciones
+ *Descripción: mostramso un ejemplo sencillo de manejo
+ *de excepciones en expresiones lambda, en este caso,
+ *la division por cero.
  */
 package ej9;
 

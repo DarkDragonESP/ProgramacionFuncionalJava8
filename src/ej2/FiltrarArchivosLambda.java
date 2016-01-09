@@ -12,7 +12,8 @@ public class FiltrarArchivosLambda {
 		
 		File directorioActual = new File(System.getProperty("user.dir"));
 		
-		String[] archivos = directorioActual.list((directorio,nombre)->nombre.endsWith(".txt"));
+		String[] archivos = directorioActual.list((directorio,nombre)->
+							nombre.endsWith(".txt"));
 		
 		for (String nombre : archivos) {
 			System.out.println(nombre);

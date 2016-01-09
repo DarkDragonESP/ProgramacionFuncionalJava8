@@ -6,7 +6,7 @@ package ej1;
  *Este método suma los 2 argumentos de entrada e imprime el resultado
  */
 
-public class MetodoAnonimo {
+public class ClaseInternaAnonima {
 	public static void main(String[] args) {
 		InterfazFuncional x = new InterfazFuncional() {
 			@Override
@@ -18,3 +18,4 @@ public class MetodoAnonimo {
 		x.sumar(1, 2);
 	}
 }
+

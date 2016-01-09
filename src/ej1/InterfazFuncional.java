@@ -16,3 +16,4 @@ public interface InterfazFuncional{
 		return 3*n;
 	}
 }
+

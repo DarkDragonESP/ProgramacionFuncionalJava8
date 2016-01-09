@@ -10,7 +10,7 @@ import java.io.*;
 //Creando la clase TextFilesFilter como filtro
 public class FiltrarArchivos {
 	public static void main(String[] args) {
-		File directorioActual = new File(System.getProperty("user.dir"));
+		File directorioActual = new File(System.getProperty("user.dir"));		
 		
 		String[] archivos= directorioActual.list();
 		

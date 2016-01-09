@@ -19,12 +19,13 @@ public class Currificacion {
 		Function<Integer,Boolean> funcIntermedia;
 
 		funcIntermedia = mayorQueC.apply(2);
-		System.out.println("Con Currificacion:\nEsto es una función intermedia "+funcIntermedia);
+		System.out.println("Con Currificacion:\nEsto es una función intermedia "
+				+ funcIntermedia);
 		System.out.println(funcIntermedia.apply(3));
-	
+
 		System.out.println("\nOtra forma: "+mayorQueC.apply(2).apply(3));
-			
-		
+
+
 		List<Integer> lista = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
 		System.out.println("\n¿Es mayor que 4?");
 		lista.forEach(x-> System.out.println(x+" "+mayorQueC.apply(x).apply(4)));

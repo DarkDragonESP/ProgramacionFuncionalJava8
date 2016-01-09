@@ -1,3 +1,7 @@
+/*Autor: Francisco Molina Sánchez
+ *Ejemplo 2: Filtrar Archivos
+ *Descripción:
+ */
 package ej2;
 
 import java.io.*;
@@ -5,12 +9,15 @@ import java.io.*;
 //Con expresiones lambda
 public class FiltrarArchivosLambda {
 	public static void main(String[] args) {
-		File currentDir = new File(System.getProperty("user.dir"));
 		
-		String[] filesLambda = currentDir.list((dir,name)->name.endsWith(".txt"));
-		for (String nombre : filesLambda) {
+		File directorioActual = new File(System.getProperty("user.dir"));
+		
+		String[] archivos = directorioActual.list((directorio,nombre)->nombre.endsWith(".txt"));
+		
+		for (String nombre : archivos) {
 			System.out.println(nombre);
 		}
+		
 	}
 }
 

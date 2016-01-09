@@ -1,5 +1,8 @@
 package ej4;
-
+/*Autor: Francisco Molina Sánchez
+ *Ejemplo 1: Interfaz Funcional y Expresiones Lambda
+ *Descripción:
+ */
 import java.util.*;
 import java.util.function.*;
 

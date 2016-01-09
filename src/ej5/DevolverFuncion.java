@@ -1,3 +1,7 @@
+/*Autor: Francisco Molina Sánchez
+ *Ejemplo 1: Interfaz Funcional y Expresiones Lambda
+ *Descripción:
+ */
 package ej5;
 
 import java.util.function.BiFunction;

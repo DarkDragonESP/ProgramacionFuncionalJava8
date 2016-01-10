@@ -6,8 +6,7 @@
 package ej2;
 
 import java.io.*;
-//
-//Creando la clase TextFilesFilter como filtro
+
 public class FiltrarArchivos {
 	public static void main(String[] args) {
 		File directorioActual = new File(System.getProperty("user.dir"));		

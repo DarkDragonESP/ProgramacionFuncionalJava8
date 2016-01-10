@@ -4,10 +4,10 @@
  *Descripción: mostramos a continuación el uso de las interfaces básicas
  * para usar expresiones lambda, sin necesidad de crear una interfaz nueva.
  * Necesitamos importar el paquete java.util.function
- * 3.1: Expresion lambda que coje 2 argumentos de entrada y devuelve la suma
+ * 3.1: Expresion lambda que coge 2 argumentos de entrada y devuelve la suma
  * 3.2: Expresion lambda que "consume" un argumento de entrada y lo imprime
- * 3.3: Expresion lambda que coje 1 argumento de entrada y devuelve su hashcode
- * 3.4: Expresión lambda que toma un argumento de entrada y devuelve un booleando 
+ * 3.3: Expresion lambda que coge 1 argumento de entrada y devuelve su hashcode
+ * 3.4: Expresión lambda que toma un argumento de entrada y devuelve un booleano 
  * según la condición
  * 3.5: Expresión lambda reducida que inicializa una Lista
  * 3.6: Ejemplo del uso de forEach de una lista que toma como argumento un Consumer

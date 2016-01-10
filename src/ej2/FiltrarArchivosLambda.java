@@ -1,12 +1,12 @@
 /*Autor: Francisco Molina Sánchez
  *Ejemplo 2: Filtrar Archivos
- *Descripción:
+ *Descripción: Filtra e imprime los ficheros con extensión .txt 
+ *en el directorio de trabajo haciendo uso de expresiones lambda
  */
 package ej2;
 
 import java.io.*;
-//Filtra e imprime los ficheros con extensión .txt en el directorio de trabajo
-//Con expresiones lambda
+
 public class FiltrarArchivosLambda {
 	public static void main(String[] args) {
 		

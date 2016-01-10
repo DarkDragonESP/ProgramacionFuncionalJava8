@@ -2,10 +2,11 @@
  *Ejemplo 8: Inferencia de tipos
  *Descripción: mostramos un ejemplo sencillo de concatenacion
  *en el que hacemos uso de una única interfaz con valores de entrada
- *de tipo T para aplicar la inferencia de tipos.
+ *de tipo T para aplicar la inferencia de tipos.Evitando hacer uso de más 
+ *de una interfaz.
  */
 package ej8;
-//nos ahorramso 3 interfaces
+
 public class InferenciaDeTipos {
 	@FunctionalInterface
 	public interface Concatenacion<T> {

@@ -2,7 +2,7 @@
  *Ejemplo 7: Currificación
  *Descripción: mostramos como aplicar currificacion con
  *expresiones lambda. En este caso, usamos la BiFunction mayorQue
- *imprimiendo una funcion parcual.Y la aplicamos sobre una lista.
+ *imprimiendo una funcion parcial.Y la aplicamos sobre una lista.
  */
 package ej7;
 
